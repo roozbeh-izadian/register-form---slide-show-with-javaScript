@@ -1,0 +1,291 @@
+          *{
+				margin: 0px;
+				padding: 0px;
+			}
+			body
+			{
+				background-image:url(images/5.jpg);
+				background-size: cover;
+				background-repeat: no-repeat;
+				background-position: center;
+				}
+			#box
+			{
+				width:1080px;
+				height:600px;
+				position: relative;
+				margin: 50px auto;
+			}	
+			#slideShow{
+				width: 960px;
+				height:600px;
+				overflow:hidden;
+				background-color: black;
+				position:absolute;
+				right: 0px;
+				border-radius:20px;
+				box-shadow:5px 5px 30px white , -5px -5px 30px white;
+				float: left;
+			}
+			#slideShow:hover>#controller
+			{
+				bottom:0px;
+			}
+			#slideShow:hover>#arrow
+			{
+				right:0px;
+			}
+			#slideShow:hover>#arrow2
+			{
+				left:0px;
+			}
+			#slideShow:hover>#text
+			{
+				top:0px;
+			}
+			#slideShow>#slider{
+				width: 3840px;
+				height:600px;
+				position:absolute;
+				left:0px;
+				transition:all 1s ease-out;
+				
+			}
+			#slideShow>#slider>div{
+				width: 960px;
+				height:600px;
+				float:left;
+				box-shadow:10px 10px 30px white inset , -10px -10px 30px white inset;
+				transition:all 1s; 				
+			}
+			#slideShow>#slider>div:nth-child(1){
+				background-image:url(images/1.jpg);
+				background-position:center;
+				background-size:cover;
+				}
+			#slideShow>#slider>div:nth-child(2){
+				background-image:url(images/2.jpg);
+				background-position:center;
+				background-size:cover;
+			}	
+			
+			#slideShow>#slider>div:nth-child(3){
+				background-image:url(images/3.jpg);
+				background-position:center;
+				background-size:cover;
+			}
+			
+			#slideShow>#slider>div:nth-child(4){
+				background-image:url(images/4.jpg);
+				background-position:center;
+				background-size:cover;
+			}
+			#slideShow>#controller
+			{
+				width:895px;
+				height:110px;
+				position:absolute;
+				background-color:rgba(69,67,67,.9);
+				bottom:-110px;
+				left:32.5px;
+				transition:all .7s;
+				border-radius:10px;
+			}
+			#slideShow>#controller>#thumbNails
+			{
+				width:895px;
+				height:110px;
+				position:absolute;
+				bottom:0px;
+				left:0px;
+			}	
+			#thumbNails>div:nth-child(1)
+			{
+				width:220px;
+				height:110px;
+				background-image:url(images/1.jpg);
+				background-position:bottom;
+				background-size:cover;
+				opacity:.5;
+				float:left;
+				border-radius:10px;
+				transition:all .5s;
+			}
+			#thumbNails>div:nth-child(1):hover
+			{
+				opacity:1;
+			}
+			#thumbNails>div:nth-child(2)
+			{
+				width:220px;
+				height:110px;
+				background-image:url(images/2.jpg);
+				background-position:bottom;
+				background-size:cover;
+				margin:0px 5px;
+				float:left;
+				border-radius:10px;
+				opacity:.5;
+				transition :all .5s;
+			}
+			#thumbNails>div:nth-child(2):hover
+			{
+				opacity:1;
+			}
+			#thumbNails>div:nth-child(3)
+			{
+				width:220px;
+				height:110px;
+				background-image:url(images/3.jpg);
+				background-position:bottom;
+				background-size:cover;
+				margin-right:5px;
+				float:left;
+				border-radius:10px;
+				opacity:.5;
+				transition:all .5s;
+			}
+			#thumbNails>div:nth-child(3):hover
+			{
+				opacity:1;
+			}
+			#thumbNails>div:nth-child(4)
+			{
+				width:220px;
+				height:110px;
+				background-image:url(images/4.jpg);
+				background-position:bottom;
+				background-size:cover;
+				float:left;
+				border-radius:10px;
+				opacity:.5;
+				transition:all .5s;
+			}
+			#thumbNails>div:nth-child(4):hover
+			{
+				opacity:1;
+			}
+			#arrow{
+				width:128px;
+				height:128px;
+				position:absolute;
+				right:-128px;
+				top:220px;
+				background-image:url(images/arrow4-2.png);
+				opacity:.3;
+				transition:all .7s;
+				}	
+			#arrow:hover
+			{
+				opacity:1;
+			}
+			#arrow2{
+				width:128px;
+				height:128px;
+				position:absolute;
+				left:-128px;
+				top:220px;
+				background-image:url(images/arrow4-2%20copy.png);
+				opacity:.3;
+				transition:all .7s;
+			}	
+			#arrow2:hover
+			{
+				opacity:1;
+			}
+			#text
+			{
+				width:960px;
+				height:100px;
+				background-color:rgba(66,59,59,.8);
+				position:absolute;
+				top:-100px;
+				transition:all .7s;
+			}
+			#textContent
+			{
+				width:500px;
+				height:50px;
+				color:white;
+				font-size:30px;
+				line-height:100px;
+				
+			}
+			a
+			{
+				position:absolute;
+				right:0px;
+				top:35px;
+				text-decoration:none;
+				font-size:30px;
+				color:white;
+			}
+			a:hover
+			{
+				text-decoration:underline;
+				color:red;
+			}
+			#showBox
+			{
+				width:120px;
+				height:600px;
+				position:absolute;
+				left:0px;
+				float: left;
+			}
+			#showBox>div
+			{
+				opacity: .5;
+				transition:all 1s;
+			}
+			#showBox>#box1
+			{
+				width: 110px;
+				height: 146.25px;
+				background-color: white;
+				float: left;
+				border-radius:50%;
+				box-shadow: 1px 1px 10px #000;
+				background-image: url(images/1.jpg);
+				background-position: center;
+				background-size: cover;
+				opacity:1;
+			}
+			#showBox>#box2
+			{
+				width: 110px;
+				height: 146.25px;
+				background-color: white;
+				float: left;
+				margin: 5px 0px;
+				border-radius:50%;
+				box-shadow: 1px 1px 10px #000;
+				background-image: url(images/2.jpg);
+				background-position: center;
+				background-size: cover;
+			}
+			#showBox>#box3
+			{
+				width: 110px;
+				height: 146.25px;
+				background-color: white;
+				float: left;
+				border-radius:50%;
+				box-shadow: 1px 1px 10px #000;
+				background-image: url(images/3.jpg);
+				background-position: center;
+				background-size: cover;
+			}
+			#showBox>#box4
+			{
+				width: 110px;
+				height: 146.25px;
+				background-color: white;
+				float: left;
+				margin-top: 5px;
+				border-radius:50%;
+				box-shadow: 1px 1px 10px #000;
+				background-image: url(images/4.jpg);
+				background-position: center;
+				background-size: cover;
+			}

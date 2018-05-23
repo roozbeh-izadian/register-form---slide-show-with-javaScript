@@ -1,0 +1,54 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Slide Show</title>
+        <link href="slideShow.css" rel="stylesheet">	
+		<script src="slideShow.js"></script>
+	</head>
+
+	<body onLoad="play()">
+		<div id="box">  
+
+			<div id="slideShow" onMouseOver="pause(),showText()" onMouseOut="play()">
+
+				<div id="slider">
+					<div id="img1"></div>
+					<div id="img2"></div>
+					<div id="img3"></div>
+					<div id="img4"></div>
+				</div>
+
+            	<div id="controller">
+
+            		<div id="thumbNails">
+                    	<div id="thumb1" onClick="goto1()"></div>
+                   		<div id="thumb2" onClick="goto2()"></div>
+                    	<div id="thumb3" onClick="goto3()"></div>
+                    	<div id="thumb4" onClick="goto4()"></div>
+                  	</div>
+
+            	</div>
+
+				<div id="arrow" onClick="arrow()"></div>
+            	<div id="arrow2" onClick="arrow2()"></div>
+
+            	<div id="text">
+
+            		<div id="textContent"></div>
+            		<a href="#">download</a>
+
+            	</div>
+            </div>
+
+            <div id="showBox">
+            	<div id="box1"></div>
+            	<div id="box2"></div>
+            	<div id="box3"></div>
+            	<div id="box4"></div>
+            </div>
+
+        </div>
+            
+	</body>
+</html>
